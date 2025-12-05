@@ -85,6 +85,8 @@ To train on your custom dataset, you need to organize it in the COCO format. Fol
 <details open>
 <summary> COCO2017 </summary>
 
+Our Model is input in cfg-improve
+
 1. Trainingoutputs/deim_hgnetv2_n_custom/last.pth
 ```shell
 export CUDA_VISIBLE_DEVICES=0
