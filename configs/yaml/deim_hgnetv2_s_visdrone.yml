@@ -7,8 +7,8 @@ __include__: [
 print_freq: 20
 output_dir: ./outputs/deim_hgnetv2_s_custom-cmssa2-++++++++
 model: TDMG_MG
-DEIM_MG:
-  yaml_path: configs/cfg-improve/dfine-s-TDMG-D-fine.yaml
+TDMG_MG:
+  yaml_path: configs/cfg-improve/dfine-s-TDMG-DETR.yaml
 #  yaml_path: configs/cfg-improve/dfine-s-MFF-G-M.yaml
 
 #  yaml_path: configs/cfg/dfine-s.yaml
