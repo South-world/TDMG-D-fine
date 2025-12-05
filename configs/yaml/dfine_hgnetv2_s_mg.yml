@@ -10,7 +10,7 @@ output_dir: ./outputs/people-detecion/dfine_hgnetv2_s-ours
 
 model: TDMG_MG
 
-DEIM_MG:
+TDMG_MG:
 #   yaml_path: configs/cfg-improve/dfine-s-TDMG-DETR.yaml
   yaml_path: configs/cfg/dfine-s.yaml
 
