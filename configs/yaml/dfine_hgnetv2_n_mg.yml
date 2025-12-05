@@ -12,7 +12,7 @@ output_dir: ./outputs/people-detecion/dfine_hgnetv2_n_visdrone-n
 model: TDMG_MG
 
 TDMG_MG:
-  yaml_path: configs/cfg-improve/dfine-n-TDMG-D-fine.yaml
+  yaml_path: configs/cfg-improve/dfine-n-TDMG-DETR.yaml
 #  yaml_path: configs/cfg/dfine-n.yaml
 
 optimizer:
@@ -35,17 +35,17 @@ optimizer:
 
 
 # Increase to search for the optimal ema
-epoches: 200 # 148 + 4n
+epoches: 300 # 148 + 4n
 train_dataloader:
-  total_batch_size: 8
+  total_batch_size: 4
   dataset:
     transforms:
       policy:
-        epoch: 188
+        epoch: 288
   collate_fn:
-    stop_epoch: 188
+    stop_epoch: 288
     ema_restart_decay: 0.9999
     base_size_repeat: ~
 
 val_dataloader:
-  total_batch_size: 1
+  total_batch_size: 8
